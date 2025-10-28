@@ -1,0 +1,71 @@
+track HistoneSignals
+compositeTrack on
+shortLabel Histone signals (ce11)
+longLabel ChIP-seq histone mark signals (ce11)
+type bigWig
+visibility full
+autoScale on
+maxHeightPixels 100:60:8
+
+track H3K4me3_signal
+parent HistoneSignals on
+shortLabel H3K4me3
+type bigWig
+color 255,0,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me3.RPKM.bw
+
+track H3K4me1_signal
+parent HistoneSignals on
+shortLabel H3K4me1
+type bigWig
+color 255,165,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me1.RPKM.bw
+
+track H3K36me3_signal
+parent HistoneSignals on
+shortLabel H3K36me3
+type bigWig
+color 0,128,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K36me3.RPKM.bw
+
+track H3K27me3_signal
+parent HistoneSignals on
+shortLabel H3K27me3
+type bigWig
+color 0,0,255
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K27me3.RPKM.bw
+
+track HistonePeaks
+compositeTrack on
+shortLabel Histone peaks (ce11)
+longLabel ChIP-seq histone mark peaks (ce11)
+type bed 3
+visibility dense
+
+track H3K4me3_peaks
+parent HistonePeaks on
+shortLabel H3K4me3
+type narrowPeak
+color 255,0,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me3_UCSC.narrowPeak
+
+track H3K4me1_peaks
+parent HistonePeaks on
+shortLabel H3K4me1
+type broadPeak
+color 255,165,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me1_UCSC.broadPeak
+
+track H3K36me3_peaks
+parent HistonePeaks on
+shortLabel H3K36me3
+type broadPeak
+color 0,128,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K36me3_UCSC.broadPeak
+
+track H3K27me3_peaks
+parent HistonePeaks on
+shortLabel H3K27me3
+type broadPeak
+color 0,0,255
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K27me3_UCSC.broadPeak

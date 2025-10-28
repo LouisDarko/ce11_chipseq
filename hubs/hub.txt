@@ -1,0 +1,5 @@
+hub ce11_histone_hub
+shortLabel ce11 histone hub
+longLabel C. elegans ce11 histone ChIP-seq peaks and signals
+genomesFile genomes.txt
+email louisdarko20@gmail.com
