@@ -1,0 +1,4 @@
+track type=bigWig name="H3K4me3_signal" description="ce11 H3K4me3 signal" visibility=2 autoScale=on color=255,0,0 bigDataUrl=https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me3.RPKM.bw
+track type=bigWig name="H3K4me1_signal" description="ce11 H3K4me1 signal" visibility=2 autoScale=on color=255,165,0 bigDataUrl=https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me1.RPKM.bw
+track type=bigWig name="H3K36me3_signal" description="ce11 H3K36me3 signal" visibility=2 autoScale=on color=0,128,0 bigDataUrl=https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K36me3.RPKM.bw
+track type=bigWig name="H3K27me3_signal" description="ce11 H3K27me3 signal" visibility=2 autoScale=on color=0,0,255 bigDataUrl=https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K27me3.RPKM.bw
