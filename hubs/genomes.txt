@@ -1,2 +1,2 @@
 genome ce11
-trackDb hubs/trackDb.txt
+trackDb hubs/ce11/trackDb.txt
