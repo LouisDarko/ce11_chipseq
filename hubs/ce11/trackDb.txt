@@ -11,7 +11,7 @@ priority 1
     type bigWig
     shortLabel H3K4me3 signal
     longLabel H3K4me3 normalized signal (RPKM)
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me3.RPKM.bw
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/bw/H3K4me3.RPKM.bw
     autoScale on
     maxHeightPixels 64:32:16
     priority 10
@@ -21,7 +21,7 @@ priority 1
     type bigWig
     shortLabel H3K4me1 signal
     longLabel H3K4me1 normalized signal (RPKM)
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me1.RPKM.bw
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/bw/H3K4me1.RPKM.bw
     autoScale on
     maxHeightPixels 64:32:16
     priority 11
@@ -31,7 +31,7 @@ priority 1
     type bigWig
     shortLabel H3K36me3 signal
     longLabel H3K36me3 normalized signal (RPKM)
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K36me3.RPKM.bw
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/bw/H3K36me3.RPKM.bw
     autoScale on
     maxHeightPixels 64:32:16
     priority 12
@@ -41,7 +41,7 @@ priority 1
     type bigWig
     shortLabel H3K27me3 signal
     longLabel H3K27me3 normalized signal (RPKM)
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K27me3.RPKM.bw
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/bw/H3K27me3.RPKM.bw
     autoScale on
     maxHeightPixels 64:32:16
     priority 13
@@ -51,7 +51,7 @@ priority 1
     type bigBed 6
     shortLabel H3K4me3 peaks
     longLabel H3K4me3 IDR peaks
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me3.bb
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/peaks/H3K4me3.bb
     visibility pack
     priority 20
 
@@ -60,7 +60,7 @@ priority 1
     type bigBed 6
     shortLabel H3K4me1 peaks
     longLabel H3K4me1 IDR peaks
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me1.bb
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/peaks/H3K4me1.bb
     visibility pack
     priority 21
 
@@ -69,7 +69,7 @@ priority 1
     type bigBed 6
     shortLabel H3K36me3 peaks
     longLabel H3K36me3 IDR peaks
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K36me3.bb
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/peaks/H3K36me3.bb
     visibility pack
     priority 22
 
@@ -78,6 +78,6 @@ priority 1
     type bigBed 6
     shortLabel H3K27me3 peaks
     longLabel H3K27me3 IDR peaks
-    bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K27me3.bb
+    bigDataUrl https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/ce11/peaks/H3K27me3.bb
     visibility pack
     priority 23
