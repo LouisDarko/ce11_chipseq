@@ -1,5 +1,5 @@
 hub ce11_chipseq
 shortLabel C. elegans ce11 histone hub
 longLabel C. elegans ce11 histone ChIP-seq (Louis Darko)
-genomesFile hubs/genomes.txt
+genomesFile https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/hubs/genomes.txt
 email louisdarko20@gmail.com
