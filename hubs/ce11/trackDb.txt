@@ -1,70 +1,96 @@
-track HistoneSignals
+track histoneComposite
+shortLabel Histone Marks
+longLabel Histone marks (signals + IDR peaks)
+type bed 3
 compositeTrack on
-shortLabel Histone signals (ce11)
-longLabel ChIP-seq histone mark signals (ce11)
-type bigWig
+allButtonPair on
 visibility full
-autoScale on
-maxHeightPixels 100:60:8
+priority 1
 
-track H3K4me3_signal
-parent HistoneSignals on
-shortLabel H3K4me3
-type bigWig
-color 255,0,0
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me3.RPKM.bw
+    track H3K4me3_signal
+    parent histoneComposite
+    type bigWig
+    shortLabel H3K4me3 signal
+    longLabel H3K4me3 normalized signal (RPKM)
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me3.RPKM.bw
+    color 255,0,0
+    autoScale on
+    maxHeightPixels 64:32:16
+    priority 10
 
-track H3K4me1_signal
-parent HistoneSignals on
-shortLabel H3K4me1
-type bigWig
-color 255,165,0
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me1.RPKM.bw
+    track H3K4me1_signal
+    parent histoneComposite
+    type bigWig
+    shortLabel H3K4me1 signal
+    longLabel H3K4me1 normalized signal (RPKM)
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/bw/H3K4me1.RPKM.bw
+    color 255,165,0
+    autoScale on
+    maxHeightPixels 64:32:16
+    priority 11
 
-track H3K36me3_signal
-parent HistoneSignals on
-shortLabel H3K36me3
-type bigWig
-color 0,128,0
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K36me3.RPKM.bw
+    track H3K36me3_signal
+    parent histoneComposite
+    type bigWig
+    shortLabel H3K36me3 signal
+    longLabel H3K36me3 normalized signal (RPKM)
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/bw/H3K36me3.RPKM.bw
+    color 0,128,0
+    autoScale on
+    maxHeightPixels 64:32:16
+    priority 12
 
-track H3K27me3_signal
-parent HistoneSignals on
-shortLabel H3K27me3
-type bigWig
-color 0,0,255
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/bw/H3K27me3.RPKM.bw
+    track H3K27me3_signal
+    parent histoneComposite
+    type bigWig
+    shortLabel H3K27me3 signal
+    longLabel H3K27me3 normalized signal (RPKM)
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/bw/H3K27me3.RPKM.bw
+    color 0,0,255
+    autoScale on
+    maxHeightPixels 64:32:16
+    priority 13
 
-track HistonePeaks
-compositeTrack on
-shortLabel Histone peaks (ce11)
-longLabel ChIP-seq histone mark peaks (ce11)
-visibility dense
+    track H3K4me3_peaks
+    parent histoneComposite
+    type bigBed 6
+    shortLabel H3K4me3 peaks
+    longLabel H3K4me3 IDR peaks
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me3.bb
+    itemRgb on
+    color 255,0,0
+    visibility pack
+    priority 20
 
-track H3K4me3_peaks
-parent HistonePeaks on
-shortLabel H3K4me3
-type bigBed 6 +
-color 255,0,0
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me3.bb
+    track H3K4me1_peaks
+    parent histoneComposite
+    type bigBed 6
+    shortLabel H3K4me1 peaks
+    longLabel H3K4me1 IDR peaks
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me1.bb
+    itemRgb on
+    color 255,165,0
+    visibility pack
+    priority 21
 
-track H3K4me1_peaks
-parent HistonePeaks on
-shortLabel H3K4me1
-type bigBed 6 +
-color 255,165,0
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K4me1.bb
+    track H3K36me3_peaks
+    parent histoneComposite
+    type bigBed 6
+    shortLabel H3K36me3 peaks
+    longLabel H3K36me3 IDR peaks
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K36me3.bb
+    itemRgb on
+    color 0,128,0
+    visibility pack
+    priority 22
 
-track H3K36me3_peaks
-parent HistonePeaks on
-shortLabel H3K36me3
-type bigBed 6 +
-color 0,128,0
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K36me3.bb
-
-track H3K27me3_peaks
-parent HistonePeaks on
-shortLabel H3K27me3
-type bigBed 6 +
-color 0,0,255
-bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K27me3.bb
+    track H3K27me3_peaks
+    parent histoneComposite
+    type bigBed 6
+    shortLabel H3K27me3 peaks
+    longLabel H3K27me3 IDR peaks
+    bigDataUrl https://media.githubusercontent.com/media/LouisDarko/ce11_chipseq/main/ce11/peaks/H3K27me3.bb
+    itemRgb on
+    color 0,0,255
+    visibility pack
+    priority 23
