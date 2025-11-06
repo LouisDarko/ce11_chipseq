@@ -1,3 +1,2 @@
 genome ce11
-trackDb https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/trackDb.txt
-group default
+trackDb hubs/trackDb.txt
