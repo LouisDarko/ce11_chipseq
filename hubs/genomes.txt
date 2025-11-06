@@ -1,2 +1,2 @@
 genome ce11
-trackDb hubs/ce11/trackDb.txt
+trackDb https://cdn.jsdelivr.net/gh/LouisDarko/ce11_chipseq@main/hubs/ce11/trackDb.txt
