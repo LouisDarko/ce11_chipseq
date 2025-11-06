@@ -1,5 +1,5 @@
-hub ce11_histone_hub
-shortLabel ce11 histone hub
-longLabel C. elegans (ce11) histone ChIP-seq peaks and signals
-genomesFile https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/genomes.txt
+hub ce11_chipseq
+shortLabel C. elegans ce11 histone hub
+longLabel C. elegans ce11 histone ChIP-seq (LouisDarko)
+genomesFile https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/hubs/genomes.txt
 email louisdarko20@gmail.com
