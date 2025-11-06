@@ -1,2 +1,3 @@
 genome ce11
-trackDb ce11/trackDb.txt
+trackDb https://raw.githubusercontent.com/LouisDarko/ce11_chipseq/main/ce11/trackDb.txt
+group default
